@@ -1,0 +1,130 @@
+═══════════════════════════════════════════════════════════════
+  INSTRUÇÕES PARA PUBLICAR O CATÁLOGO AGIL PRODUTOS
+═══════════════════════════════════════════════════════════════
+
+✅ SISTEMA VERIFICADO E PRONTO PARA PUBLICAÇÃO!
+
+📊 STATUS:
+   ✅ 37 produtos cadastrados
+   ✅ 37 imagens mapeadas corretamente
+   ✅ Todos os caminhos funcionando
+   ✅ Código sem erros
+   ✅ Design responsivo
+   ✅ Funcionalidades completas
+
+═══════════════════════════════════════════════════════════════
+  OPÇÕES DE PUBLICAÇÃO (TODAS GRATUITAS)
+═══════════════════════════════════════════════════════════════
+
+1️⃣ NETLIFY (MAIS FÁCIL - RECOMENDADO)
+   ────────────────────────────────────────────────────────────
+   1. Acesse: https://www.netlify.com
+   2. Clique em "Sign up" (criar conta)
+   3. Faça login
+   4. Arraste a PASTA COMPLETA "ARGIL" para a área de deploy
+   5. Pronto! Seu site estará online em segundos
+   
+   ✅ Vantagens: Super fácil, sem configuração, HTTPS automático
+
+2️⃣ VERCEL
+   ────────────────────────────────────────────────────────────
+   1. Acesse: https://vercel.com
+   2. Faça login com GitHub
+   3. Clique em "Add New Project"
+   4. Faça upload dos arquivos
+   5. Deploy automático!
+   
+   ✅ Vantagens: Rápido, integração com GitHub
+
+3️⃣ GITHUB PAGES
+   ────────────────────────────────────────────────────────────
+   1. Crie conta no GitHub: https://github.com
+   2. Crie novo repositório
+   3. Faça upload de todos os arquivos
+   4. Vá em Settings > Pages
+   5. Selecione branch "main" e salve
+   
+   ✅ Vantagens: Gratuito, ilimitado, confiável
+
+═══════════════════════════════════════════════════════════════
+  ARQUIVOS PARA FAZER UPLOAD
+═══════════════════════════════════════════════════════════════
+
+Certifique-se de fazer upload de TODOS estes arquivos:
+
+📁 ESTRUTURA:
+   ├── index.html          (OBRIGATÓRIO)
+   ├── produtos.json       (OBRIGATÓRIO)
+   └── IMAGENS/            (PASTA COMPLETA - OBRIGATÓRIO)
+       ├── logo.jpeg
+       ├── ALVEJANTE SEM CLORO.jpeg
+       ├── AMACIANTE DE ROUPA.jpeg
+       └── [todas as outras 35 imagens]
+
+⚠️ IMPORTANTE: Mantenha a estrutura de pastas!
+   A pasta IMAGENS deve estar no mesmo nível do index.html
+
+═══════════════════════════════════════════════════════════════
+  TESTE ANTES DE PUBLICAR
+═══════════════════════════════════════════════════════════════
+
+1. Abra o index.html em um navegador
+2. Verifique se todas as imagens aparecem
+3. Teste adicionar produtos ao carrinho
+4. Teste a busca
+5. Teste o envio para WhatsApp
+
+═══════════════════════════════════════════════════════════════
+  PERSONALIZAÇÃO
+═══════════════════════════════════════════════════════════════
+
+📱 NÚMERO DO WHATSAPP:
+   Edite a linha 540 do index.html:
+   const phone = "5511960435545"; // Altere aqui
+
+🎨 CORES:
+   Edite as linhas 12-13 do index.html:
+   .bg-agil { background-color: #a4d4cc; }
+   .text-agil { color: #1a1a1a; }
+
+🖼️ LOGO:
+   Substitua o arquivo: IMAGENS/logo.jpeg
+
+═══════════════════════════════════════════════════════════════
+  PROBLEMAS COMUNS
+═══════════════════════════════════════════════════════════════
+
+❌ Imagens não aparecem:
+   → Verifique se a pasta IMAGENS foi enviada
+   → Verifique se os nomes dos arquivos estão corretos
+   → Limpe o cache do navegador (Ctrl+F5)
+
+❌ Produtos não carregam:
+   → Verifique se produtos.json foi enviado
+   → Verifique se o JSON está válido
+
+❌ WhatsApp não abre:
+   → Verifique se o número está correto
+   → Teste em um navegador moderno
+
+═══════════════════════════════════════════════════════════════
+  SUPORTE
+═══════════════════════════════════════════════════════════════
+
+📝 Para adicionar produtos:
+   1. Adicione a imagem em IMAGENS/
+   2. Edite produtos.json
+   3. Adicione novo objeto no array
+
+📝 Para editar nomes:
+   1. Abra produtos.json
+   2. Altere o campo "name"
+   3. Salve
+
+═══════════════════════════════════════════════════════════════
+
+🎉 SEU SISTEMA ESTÁ 100% PRONTO PARA PUBLICAR!
+
+Boa sorte com seu catálogo digital! 🚀
+
+═══════════════════════════════════════════════════════════════

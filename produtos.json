@@ -1,0 +1,224 @@
+[
+    {
+        "id": 1,
+        "name": "Alvejante Sem Cloro",
+        "category": "Limpeza",
+        "image": "IMAGENS/ALVEJANTE SEM CLORO.jpeg"
+    },
+    {
+        "id": 2,
+        "name": "Amaciante De Roupa",
+        "category": "Limpeza",
+        "image": "IMAGENS/AMACIANTE DE ROUPA.jpeg"
+    },
+    {
+        "id": 3,
+        "name": "Aromatizador",
+        "category": "Limpeza",
+        "image": "IMAGENS/AROMATIZADOR.jpeg"
+    },
+    {
+        "id": 4,
+        "name": "Aromatizante Para Carro",
+        "category": "Limpeza",
+        "image": "IMAGENS/AROMATIZANTE PARA CARRO.jpeg"
+    },
+    {
+        "id": 5,
+        "name": "Bom Ar",
+        "category": "Limpeza",
+        "image": "IMAGENS/BOM AR.jpeg"
+    },
+    {
+        "id": 6,
+        "name": "Cloro",
+        "category": "Limpeza",
+        "image": "IMAGENS/CLORO.jpeg"
+    },
+    {
+        "id": 7,
+        "name": "Desengordurante",
+        "category": "Limpeza",
+        "image": "IMAGENS/DESENGORDURANTE.jpeg"
+    },
+    {
+        "id": 8,
+        "name": "Desengraxante Automotivo",
+        "category": "Limpeza",
+        "image": "IMAGENS/DESENGRAXANTE AUTOMOTIVO.jpeg"
+    },
+    {
+        "id": 9,
+        "name": "Desinfetante Multiuso",
+        "category": "Limpeza",
+        "image": "IMAGENS/DESINFETANTE MULTIUSO.jpeg"
+    },
+    {
+        "id": 10,
+        "name": "Desinfetante",
+        "category": "Limpeza",
+        "image": "IMAGENS/DESINFETANTE.jpeg"
+    },
+    {
+        "id": 11,
+        "name": "Detergente",
+        "category": "Limpeza",
+        "image": "IMAGENS/DETERGENTE.jpeg"
+    },
+    {
+        "id": 12,
+        "name": "Escova De Limpar Com Base",
+        "category": "Limpeza",
+        "image": "IMAGENS/ESCOVA DE LIMPAR COM BASE.jpeg"
+    },
+    {
+        "id": 13,
+        "name": "Escova De Limpar Sem Cabo",
+        "category": "Limpeza",
+        "image": "IMAGENS/ESCOVA DE LIMPAR SEM CABO.jpeg"
+    },
+    {
+        "id": 14,
+        "name": "Limpa Alumínio",
+        "category": "Limpeza",
+        "image": "IMAGENS/LIMPA ALUMÍNIO.jpeg"
+    },
+    {
+        "id": 15,
+        "name": "Limpa Baú",
+        "category": "Limpeza",
+        "image": "IMAGENS/LIMPA BAÚ.jpeg"
+    },
+    {
+        "id": 16,
+        "name": "Limpa Pedra",
+        "category": "Limpeza",
+        "image": "IMAGENS/LIMPA PEDRA.jpeg"
+    },
+    {
+        "id": 17,
+        "name": "Limpa Piso",
+        "category": "Limpeza",
+        "image": "IMAGENS/LIMPA PISO.jpeg"
+    },
+    {
+        "id": 18,
+        "name": "Lustra Móvel",
+        "category": "Limpeza",
+        "image": "IMAGENS/LUSTRA MÓVEL.jpeg"
+    },
+    {
+        "id": 19,
+        "name": "Maridão",
+        "category": "Limpeza",
+        "image": "IMAGENS/MARIDÃO.jpeg"
+    },
+    {
+        "id": 20,
+        "name": "Mop",
+        "category": "Limpeza",
+        "image": "IMAGENS/MOP.jpeg"
+    },
+    {
+        "id": 21,
+        "name": "Multiuso Veja",
+        "category": "Limpeza",
+        "image": "IMAGENS/MULTIUSO VEJA.jpeg"
+    },
+    {
+        "id": 22,
+        "name": "Pano De Chão Xadrez",
+        "category": "Limpeza",
+        "image": "IMAGENS/PANO DE CHÃO XADREZ.jpeg"
+    },
+    {
+        "id": 23,
+        "name": "Pano De Chão",
+        "category": "Limpeza",
+        "image": "IMAGENS/PANO DE CHÃO.jpeg"
+    },
+    {
+        "id": 24,
+        "name": "Pano De Prato",
+        "category": "Limpeza",
+        "image": "IMAGENS/PANO DE PRATO.jpeg"
+    },
+    {
+        "id": 25,
+        "name": "Pano Microfibra",
+        "category": "Limpeza",
+        "image": "IMAGENS/PANO MICROFIBRA.jpeg"
+    },
+    {
+        "id": 26,
+        "name": "Pasta De Brilho",
+        "category": "Limpeza",
+        "image": "IMAGENS/PASTA DE BRILHO.jpeg"
+    },
+    {
+        "id": 27,
+        "name": "Pinho Gel",
+        "category": "Limpeza",
+        "image": "IMAGENS/PINHO GEL.jpeg"
+    },
+    {
+        "id": 28,
+        "name": "Rodo",
+        "category": "Limpeza",
+        "image": "IMAGENS/RODO.jpeg"
+    },
+    {
+        "id": 29,
+        "name": "Sabonete Líquido",
+        "category": "Limpeza",
+        "image": "IMAGENS/SABONETE LÍQUIDO.jpeg"
+    },
+    {
+        "id": 30,
+        "name": "Sabão Líquido",
+        "category": "Limpeza",
+        "image": "IMAGENS/SABÃO LÍQUIDO.jpeg"
+    },
+    {
+        "id": 31,
+        "name": "Saco De Lixo",
+        "category": "Limpeza",
+        "image": "IMAGENS/SACO DE LIXO.jpeg"
+    },
+    {
+        "id": 32,
+        "name": "Salopan Para Carro",
+        "category": "Limpeza",
+        "image": "IMAGENS/SALOPAN PARA CARRO.jpeg"
+    },
+    {
+        "id": 33,
+        "name": "Varal De Flex",
+        "category": "Limpeza",
+        "image": "IMAGENS/VARAL DE FLEX.jpeg"
+    },
+    {
+        "id": 34,
+        "name": "Vassoura",
+        "category": "Limpeza",
+        "image": "IMAGENS/VASSOURA.jpeg"
+    },
+    {
+        "id": 35,
+        "name": "Água Sanitária",
+        "category": "Limpeza",
+        "image": "IMAGENS/ÁGUA SANITÁRIA.jpeg"
+    },
+    {
+        "id": 36,
+        "name": "Álcool Perfumado",
+        "category": "Limpeza",
+        "image": "IMAGENS/ÁLCOOL PERFUMADO.jpeg"
+    },
+    {
+        "id": 37,
+        "name": "Óleo Aromatizador",
+        "category": "Limpeza",
+        "image": "IMAGENS/ÓLEO AROMATIZADOR.jpeg"
+    }
+]

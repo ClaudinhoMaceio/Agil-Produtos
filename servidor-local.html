@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servidor Local - Agil Produtos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        h1 { color: #333; }
+        code {
+            background: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        .btn {
+            background: #a4d4cc;
+            color: #1a1a1a;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin: 5px;
+        }
+        .btn:hover {
+            background: #8bc4b8;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🚀 Servidor Local para Agil Produtos</h1>
+        <p>Para que as imagens carreguem corretamente, você precisa abrir o site através de um servidor local.</p>
+        
+        <h2>Opção 1: Usar Python (Recomendado)</h2>
+        <p>Abra o PowerShell ou Terminal na pasta do projeto e execute:</p>
+        <code>python -m http.server 8000</code>
+        <p>Depois acesse: <a href="http://localhost:8000/index.html">http://localhost:8000/index.html</a></p>
+        
+        <h2>Opção 2: Usar Node.js</h2>
+        <p>Instale o http-server globalmente:</p>
+        <code>npm install -g http-server</code>
+        <p>Depois execute:</p>
+        <code>http-server -p 8000</code>
+        <p>E acesse: <a href="http://localhost:8000/index.html">http://localhost:8000/index.html</a></p>
+        
+        <h2>Opção 3: Usar Live Server (VS Code)</h2>
+        <p>Se você usa VS Code, instale a extensão "Live Server" e clique com botão direito no index.html → "Open with Live Server"</p>
+        
+        <h2>⚠️ Por que isso é necessário?</h2>
+        <p>Navegadores modernos bloqueiam o carregamento de arquivos locais (file://) por questões de segurança. Usar um servidor local resolve isso.</p>
+    </div>
+    
+    <div class="card">
+        <h2>🔍 Verificar se as imagens existem</h2>
+        <button class="btn" onclick="verificarImagens()">Verificar Imagens</button>
+        <div id="resultado" style="margin-top: 20px;"></div>
+    </div>
+    
+    <script>
+        async function verificarImagens() {
+            const resultado = document.getElementById('resultado');
+            resultado.innerHTML = '<p>Verificando...</p>';
+            
+            try {
+                const response = await fetch('produtos.json');
+                const produtos = await response.json();
+                
+                let html = '<h3>Resultado da Verificação:</h3><ul>';
+                let sucesso = 0;
+                let erro = 0;
+                
+                for (const produto of produtos) {
+                    try {
+                        const imgResponse = await fetch(produto.image);
+                        if (imgResponse.ok) {
+                            html += `<li style="color: green;">✅ ${produto.name} - ${produto.image}</li>`;
+                            sucesso++;
+                        } else {
+                            html += `<li style="color: red;">❌ ${produto.name} - ${produto.image} (Erro ${imgResponse.status})</li>`;
+                            erro++;
+                        }
+                    } catch (e) {
+                        html += `<li style="color: red;">❌ ${produto.name} - ${produto.image} (${e.message})</li>`;
+                        erro++;
+                    }
+                }
+                
+                html += '</ul>';
+                html += `<p><strong>Total: ${sucesso} sucesso, ${erro} erros</strong></p>`;
+                resultado.innerHTML = html;
+            } catch (e) {
+                resultado.innerHTML = `<p style="color: red;">Erro ao carregar produtos.json: ${e.message}</p>`;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "renomear-imagens-argil",
+  "version": "1.0.0",
+  "description": "Script para renomear imagens usando OCR",
+  "main": "renomear-imagens.js",
+  "scripts": {
+    "renomear": "node renomear-imagens.js"
+  },
+  "dependencies": {
+    "tesseract.js": "^5.0.4"
+  },
+  "author": "",
+  "license": "ISC"
+}

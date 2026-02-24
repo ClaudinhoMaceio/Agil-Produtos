@@ -1,0 +1,113 @@
+═══════════════════════════════════════════════════════════════
+  COMO EDITAR E ADICIONAR PRODUTOS - AGIL PRODUTOS
+═══════════════════════════════════════════════════════════════
+
+📝 EDITAR NOME DE PRODUTO EXISTENTE:
+
+1. Abra o arquivo: produtos.json
+
+2. Encontre o produto que deseja editar
+
+3. Altere o campo "name" com o novo nome do produto
+
+   Exemplo:
+   ANTES:  "name": "Sabão em Pasta Fab Limp 500g"
+   DEPOIS: "name": "Sabão em Pasta Fab Limp 1kg"
+
+4. Salve o arquivo (Ctrl + S)
+
+5. Recarregue a página no navegador (F5)
+
+═══════════════════════════════════════════════════════════════
+
+➕ ADICIONAR NOVO PRODUTO:
+
+1. Abra o arquivo: produtos.json
+
+2. Vá até o último produto (antes do colchete final ])
+
+3. Adicione uma vírgula (,) após o último produto
+
+4. Cole este PADRÃO EXATO abaixo do último produto:
+
+    {
+        "id": 39,
+        "name": "NOME DO PRODUTO AQUI",
+        "category": "Limpeza",
+        "image": "IMAGENS/WhatsApp Image 2026-02-23 at 13.15.02.jpeg"
+    }
+
+   📌 PADRÃO OFICIAL (copie exatamente assim):
+   - "id": número sequencial (39, 40, 41...)
+   - "name": nome do produto entre aspas
+   - "category": categoria entre aspas
+   - "image": caminho completo da imagem na pasta IMAGENS
+
+5. IMPORTANTE:
+   - Aumente o "id" (10, 11, 12, etc.) para cada novo produto
+   - Altere "name" para o nome do seu produto
+   - Altere "category" se necessário (Limpeza, Automotivo, Utensílios, etc.)
+   - Altere "image" para o nome da imagem na pasta IMAGENS
+
+6. Salve o arquivo (Ctrl + S)
+
+7. Recarregue a página no navegador (F5)
+
+✅ O novo produto aparecerá automaticamente no catálogo!
+
+═══════════════════════════════════════════════════════════════
+
+📋 ESTRUTURA DO ARQUIVO produtos.json:
+
+Cada produto tem:
+- "id": número único do produto (sempre aumente para novos produtos)
+- "name": NOME DO PRODUTO (edite aqui!)
+- "category": categoria do produto (ex: "Limpeza", "Automotivo", "Utensílios")
+- "image": caminho da imagem na pasta IMAGENS
+
+═══════════════════════════════════════════════════════════════
+
+⚠️ REGRAS IMPORTANTES:
+- Mantenha as aspas duplas (")
+- SEMPRE adicione vírgula (,) após o último produto antes de adicionar novo
+- Não apague os colchetes [ ] no início e fim do arquivo
+- Cada "id" deve ser único e maior que o anterior
+- Salve sempre em formato JSON válido
+
+═══════════════════════════════════════════════════════════════
+
+💡 EXEMPLO DE COMO ADICIONAR:
+
+ANTES (último produto):
+    {
+        "id": 9,
+        "name": "Desengraxante Industrial 2L",
+        "category": "Limpeza Pesada",
+        "image": "IMAGENS/WhatsApp Image 2026-02-23 at 13.14.52.jpeg"
+    }
+]
+
+DEPOIS (adicionando novo produto seguindo o padrão):
+    {
+        "id": 38,
+        "name": "Produto de Limpeza",
+        "category": "Limpeza",
+        "image": "IMAGENS/WhatsApp Image 2026-02-23 at 13.15.02.jpeg"
+    },
+    {
+        "id": 39,
+        "name": "NOME DO NOVO PRODUTO",
+        "category": "Limpeza",
+        "image": "IMAGENS/WhatsApp Image 2026-02-23 at 13.15.02.jpeg"
+    }
+]
+
+📌 PADRÃO EXATO PARA COPIAR:
+{
+    "id": 39,
+    "name": "Produto de Limpeza",
+    "category": "Limpeza",
+    "image": "IMAGENS/WhatsApp Image 2026-02-23 at 13.15.02.jpeg"
+}
+
+═══════════════════════════════════════════════════════════════

@@ -1,0 +1,40 @@
+═══════════════════════════════════════════════════════════════
+  PADRÃO OFICIAL PARA ADICIONAR PRODUTOS
+═══════════════════════════════════════════════════════════════
+
+📋 COPIE E COLE ESTE PADRÃO EXATO:
+
+{
+    "id": 39,
+    "name": "Produto de Limpeza",
+    "category": "Limpeza",
+    "image": "IMAGENS/WhatsApp Image 2026-02-23 at 13.15.02.jpeg"
+}
+
+═══════════════════════════════════════════════════════════════
+
+📝 COMO USAR:
+
+1. Abra produtos.json
+
+2. Vá até o último produto (antes do ])
+
+3. Adicione uma vírgula (,) após o último produto
+
+4. Cole o padrão acima
+
+5. Altere:
+   - "id": aumente o número (39, 40, 41...)
+   - "name": coloque o nome do produto
+   - "category": mantenha ou altere (Limpeza, Automotivo, Utensílios)
+   - "image": coloque o nome da imagem da pasta IMAGENS
+
+6. Salve (Ctrl + S)
+
+7. Clique em "Recarregar Produtos" no site
+
+═══════════════════════════════════════════════════════════════
+
+✅ O sistema reconhecerá automaticamente seguindo este padrão!
+
+═══════════════════════════════════════════════════════════════
