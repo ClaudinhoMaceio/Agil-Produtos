@@ -333,12 +333,24 @@
 
         function addToCart(productId) {
             const product = products.find(p => p.id === productId);
+            if (!product) {
+                console.error('Produto não encontrado:', productId);
+                return;
+            }
+            
             const inCart = cart.find(item => item.id === productId);
 
             if (inCart) {
                 inCart.quantity++;
             } else {
-                cart.push({ ...product, quantity: 1 });
+                // Garante que todas as propriedades são copiadas corretamente
+                cart.push({
+                    id: product.id,
+                    name: product.name || 'Produto',
+                    category: product.category || 'Limpeza',
+                    image: product.image,
+                    quantity: 1
+                });
             }
             updateCartUI();
             
@@ -538,8 +550,16 @@
             message += "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n";
             message += "Olá! Gostaria de encomendar os seguintes produtos:\n\n";
 
-            cart.forEach((item, index) => {
-                message += `📦 *${item.quantity}x* ${item.name || `Produto ${index + 1}`}\n`;
+            // Garante que os nomes estão corretos - busca o nome original do produto
+            cart.forEach((item) => {
+                // Busca o produto original para garantir o nome correto
+                const originalProduct = products.find(p => p.id === item.id);
+                const productName = (originalProduct && originalProduct.name) ? originalProduct.name : (item.name || 'Produto');
+                
+                // Limpa o nome removendo espaços extras
+                const cleanName = productName.trim().replace(/\s+/g, ' ');
+                
+                message += `📦 *${item.quantity}x* ${cleanName}\n`;
             });
 
             message += `\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`;
